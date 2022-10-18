@@ -5,5 +5,5 @@ module.exports = ({ env }) => ({
     keys: env.array('APP_KEYS'),
   },
   
-  // url: env('PUBLIC_URL', 'https://admin.metacodeshare.com'),
+  url: env('PUBLIC_URL', 'https://admin.metacodeshare.com'),
 });
