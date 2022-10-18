@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_accueil_faqs",
+  "info": {
+    "displayName": "Faq",
+    "icon": "space-shuttle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

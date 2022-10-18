@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_qanda_reponses",
+  "info": {
+    "displayName": "reponse",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "reponse": {
+      "type": "richtext"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "like": {
+      "type": "component",
+      "repeatable": true,
+      "component": "qanda.likereponse"
+    }
+  }
+}

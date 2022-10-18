@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "Prenom": {
+      "type": "string"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "entite": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::entite.entite",
+      "inversedBy": "contacts"
+    },
+    "Categorie": {
+      "type": "enumeration",
+      "enum": [
+        "Client",
+        "Prescripteur",
+        "Prestataire",
+        "Financeur"
+      ],
+      "default": "Client"
+    },
+    "DateNaissance": {
+      "type": "date"
+    },
+    "id_admin_user": {
+      "type": "integer",
+      "required": false,
+      "private": true
+    }
+  }
+}

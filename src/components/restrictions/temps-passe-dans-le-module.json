@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_restrictions_temps_passe_dans_le_modules",
+  "info": {
+    "displayName": "Temps passé dans le module",
+    "icon": "user-clock"
+  },
+  "options": {},
+  "attributes": {
+    "temps_min": {
+      "type": "string",
+      "minLength": 1,
+      "default": "1"
+    }
+  }
+}

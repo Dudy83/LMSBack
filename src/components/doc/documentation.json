@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_doc_documentations",
+  "info": {
+    "displayName": "Documentation",
+    "icon": "book-open",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    },
+    "titre": {
+      "type": "string",
+      "required": true,
+      "default": "Exemple"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}

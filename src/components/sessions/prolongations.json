@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sessions_prolongations",
+  "info": {
+    "displayName": "Prolongations",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "date_finish": {
+      "type": "datetime"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

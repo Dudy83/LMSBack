@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_gallery_item_items",
+  "info": {
+    "displayName": "item",
+    "icon": "gamepad"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_quizz_reponses_reponse_longues",
+  "info": {
+    "displayName": "reponseLongue",
+    "icon": "paragraph",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "dissertation": {
+      "type": "richtext",
+      "default": "Votre dissertation..",
+      "minLength": 5
+    },
+    "reponseMedia": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "dissertationTitre": {
+      "type": "string",
+      "default": "Ma dissertation",
+      "required": true
+    }
+  }
+}

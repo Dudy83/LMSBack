@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_reassurance_item_reassurances",
+  "info": {
+    "displayName": "Reassurance",
+    "icon": "burn"
+  },
+  "options": {},
+  "attributes": {
+    "Stat": {
+      "type": "integer"
+    },
+    "Text": {
+      "type": "string"
+    }
+  }
+}

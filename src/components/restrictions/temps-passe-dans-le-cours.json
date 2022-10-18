@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_restrictions_temps_passe_dans_le_cours",
+  "info": {
+    "displayName": "Temps passé dans le cours",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "temps_min": {
+      "type": "string",
+      "default": "0",
+      "required": true,
+      "maxLength": 1
+    }
+  }
+}

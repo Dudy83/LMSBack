@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_content_activites_iframe_youtubes",
+  "info": {
+    "displayName": "Iframe-youtube",
+    "icon": "photo-video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "lienUrl": {
+      "type": "string",
+      "required": true
+    },
+    "lecture_auto": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "son_active": {
+      "type": "boolean"
+    },
+    "debut": {
+      "type": "decimal",
+      "default": 0
+    },
+    "fin": {
+      "type": "decimal",
+      "default": 0,
+      "required": false
+    }
+  }
+}

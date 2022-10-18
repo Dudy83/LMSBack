@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_test_reponses_graduations",
+  "info": {
+    "displayName": "Graduation",
+    "icon": "sort-numeric-up-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "bonne_note": {
+      "type": "biginteger"
+    },
+    "note_max": {
+      "type": "biginteger",
+      "required": true
+    },
+    "note_min": {
+      "type": "biginteger",
+      "default": "0",
+      "required": true
+    }
+  }
+}

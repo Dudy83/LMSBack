@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "log_stores",
+  "info": {
+    "singularName": "log-store",
+    "pluralName": "log-stores",
+    "displayName": "Log Store"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contentType": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "author": {
+      "type": "json"
+    },
+    "content": {
+      "type": "json"
+    },
+    "dateadded": {
+      "type": "datetime"
+    }
+  }
+}

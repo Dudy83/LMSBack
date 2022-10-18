@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_menus_menus",
+  "info": {
+    "displayName": "menu",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menuName": {
+      "type": "string"
+    },
+    "menuLink": {
+      "type": "string"
+    },
+    "dropdowns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menus.dropdown"
+    },
+    "isMegaMenu": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}

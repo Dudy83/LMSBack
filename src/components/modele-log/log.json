@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_modele_log_logs",
+  "info": {
+    "displayName": "Log",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pourcentage": {
+      "type": "integer",
+      "required": true
+    },
+    "time": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "activites": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::activite.activite"
+    },
+    "module": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::module.module"
+    },
+    "date_created": {
+      "type": "datetime"
+    },
+    "totalActivity": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "totalDone": {
+      "type": "biginteger",
+      "default": "0"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prospects",
+  "info": {
+    "singularName": "prospect",
+    "pluralName": "prospects",
+    "displayName": "Prospects",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "message": {
+      "type": "richtext"
+    },
+    "check": {
+      "type": "boolean"
+    },
+    "formations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::formation.formation"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "NonAssigne",
+        "LeadBrut",
+        "LeadQualifie",
+        "NRP1",
+        "NRP2",
+        "NRP3",
+        "NRP4",
+        "NRP5",
+        "MauvaisNumero",
+        "NonEligible",
+        "Rappel",
+        "EnReflexion",
+        "PasInteresse",
+        "PreInscription",
+        "Inscrit",
+        "Report",
+        "Annulation",
+        "PremiereConnexion",
+        "PartiellementPresent",
+        "Present"
+      ],
+      "default": "NonAssigne",
+      "private": true
+    },
+    "profession": {
+      "type": "text"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user",
+      "private": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::formations-categorie.formations-categorie"
+    },
+    "Source": {
+      "type": "enumeration",
+      "enum": [
+        "Site",
+        "SiteEDOF",
+        "Recommandation",
+        "AchatLead"
+      ]
+    },
+    "Fournisseur": {
+      "type": "enumeration",
+      "enum": [
+        "Skynet",
+        "Reckon"
+      ]
+    },
+    "id_admin_user": {
+      "type": "integer",
+      "private": true
+    }
+  }
+}

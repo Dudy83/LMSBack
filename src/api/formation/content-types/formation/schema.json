@@ -1,0 +1,181 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formations",
+  "info": {
+    "singularName": "formation",
+    "pluralName": "formations",
+    "displayName": "Formations",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "shortDesc": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "videoSubtitle": {
+      "type": "enumeration",
+      "enum": [
+        "Anglais",
+        "Français"
+      ]
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "Anglais",
+        "Français"
+      ]
+    },
+    "accessLimit": {
+      "type": "string"
+    },
+    "popular": {
+      "type": "boolean"
+    },
+    "totalCourseMinutes": {
+      "type": "biginteger"
+    },
+    "image_cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "video_media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "video_link": {
+      "type": "string"
+    },
+    "commandes_formations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "formation"
+    },
+    "financeurs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::financeur.financeur",
+      "inversedBy": "formations"
+    },
+    "certifications": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::certification.certification",
+      "inversedBy": "formations"
+    },
+    "ratings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rating.rating",
+      "mappedBy": "formation"
+    },
+    "formations_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::formations-categorie.formations-categorie",
+      "inversedBy": "formations"
+    },
+    "q_and_as": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::q-and-a.q-and-a",
+      "mappedBy": "formation"
+    },
+    "enseignant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "Modules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "formations.modules"
+    },
+    "sessions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::session.session",
+      "mappedBy": "formation"
+    },
+    "reference": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "showFormation": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "showEnseignant": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "showPrice": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "objectifs": {
+      "type": "richtext",
+      "default": "Ceci est l'objectif final de ce cours"
+    },
+    "showCTA": {
+      "type": "boolean",
+      "default": true
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user",
+      "private": true
+    },
+    "id_admin_user": {
+      "type": "integer",
+      "private": true
+    }
+  }
+}

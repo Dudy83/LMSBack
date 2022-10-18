@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_quizz_reponses_qcms",
+  "info": {
+    "displayName": "QCM",
+    "icon": "list-ul",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "reponseUnique": {
+      "type": "boolean",
+      "default": true
+    },
+    "Option": {
+      "type": "component",
+      "repeatable": true,
+      "component": "test-reponses.qcm-choice"
+    }
+  }
+}

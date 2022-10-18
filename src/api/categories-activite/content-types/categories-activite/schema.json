@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories_activites",
+  "info": {
+    "singularName": "categories-activite",
+    "pluralName": "categories-activites",
+    "displayName": "Activités Catégories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "activites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::activite.activite",
+      "mappedBy": "activiteCategorie"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user",
+      "private": true
+    },
+    "id_admin_user": {
+      "type": "integer",
+      "private": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_quizz_reponses_qcm_choices",
+  "info": {
+    "displayName": "QCMOption",
+    "icon": "list-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "bonneReponse": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "reponse": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

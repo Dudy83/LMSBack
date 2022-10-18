@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_accueil_abouts",
+  "info": {
+    "displayName": "Section Video",
+    "icon": "camera",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtext": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "string"
+    },
+    "linkText": {
+      "type": "string"
+    },
+    "videoLink": {
+      "type": "string"
+    },
+    "emoji": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "showHide": {
+      "type": "boolean"
+    },
+    "mediaPreview": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

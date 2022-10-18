@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "singularName": "task",
+    "pluralName": "tasks",
+    "displayName": "Task",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user",
+      "private": true
+    },
+    "DeadLine": {
+      "type": "date",
+      "required": true
+    },
+    "FichierJoint": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Categorie": {
+      "type": "enumeration",
+      "enum": [
+        "DEV site LMS",
+        "Commerce",
+        "Marketing",
+        "Production Formation",
+        "Suivi Client",
+        "RH",
+        "Compta",
+        "Autre"
+      ],
+      "required": true
+    },
+    "Etat": {
+      "type": "enumeration",
+      "enum": [
+        "A faire",
+        "En cours",
+        "Termine",
+        "Objectif_Atteint",
+        "Abandon"
+      ],
+      "default": "A faire",
+      "required": true
+    },
+    "id_admin_user": {
+      "type": "integer",
+      "private": true,
+      "default": 0
+    }
+  }
+}

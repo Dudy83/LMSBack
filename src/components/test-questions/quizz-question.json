@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_quizz_question_quizz_questions",
+  "info": {
+    "displayName": "question-base",
+    "icon": "question-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mediaLien": {
+      "type": "string"
+    },
+    "point_question": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

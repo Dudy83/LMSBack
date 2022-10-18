@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "financeurs",
+  "info": {
+    "singularName": "financeur",
+    "pluralName": "financeurs",
+    "displayName": "Financeurs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Url": {
+      "type": "string"
+    },
+    "formations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::formation.formation",
+      "mappedBy": "financeurs"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "id_admin_user": {
+      "type": "integer",
+      "private": true
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user",
+      "private": true
+    }
+  }
+}

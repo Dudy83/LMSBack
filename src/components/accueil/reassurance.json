@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_accueil_reassurances",
+  "info": {
+    "displayName": "Réassurance",
+    "icon": "comment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stat": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reassurance-item.reassurance",
+      "max": 3
+    }
+  }
+}

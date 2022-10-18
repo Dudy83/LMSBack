@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_faq_items_items",
+  "info": {
+    "displayName": "item",
+    "icon": "hourglass-end"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "richtext"
+    }
+  }
+}

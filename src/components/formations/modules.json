@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_formations_modules",
+  "info": {
+    "displayName": "Modules",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "module": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::module.module"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_restrictions_achevement_d_activite",
+  "info": {
+    "displayName": "Achèvement d'activité",
+    "icon": "flag-checkered",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "activite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::activite.activite"
+    },
+    "Action": {
+      "type": "enumeration",
+      "enum": [
+        "Doit être terminé",
+        "Ne doit pas être terminé",
+        "Doit être terminé avec une note de réussite",
+        "Doit être terminé avec une note d'échec"
+      ]
+    }
+  }
+}

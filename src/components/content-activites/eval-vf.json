@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_activites_eval_vfs",
+  "info": {
+    "displayName": "Test - VF",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "reponse": {
+      "type": "component",
+      "repeatable": false,
+      "component": "test-reponses.vf"
+    },
+    "question_contenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "test-questions.quizz-question"
+    }
+  }
+}

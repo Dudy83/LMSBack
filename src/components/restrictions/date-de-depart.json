@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_restrictions_date_de_departs",
+  "info": {
+    "displayName": "Date de départ",
+    "icon": "calendar-check"
+  },
+  "options": {},
+  "attributes": {
+    "date_start": {
+      "type": "datetime",
+      "default": "2022-01-01T13:00:00.000Z",
+      "required": true
+    }
+  }
+}

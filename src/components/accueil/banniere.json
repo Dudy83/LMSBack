@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_accueil_bannieres",
+  "info": {
+    "displayName": "Bannière",
+    "icon": "border-all",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "richtext"
+    },
+    "buttonIcon": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "mainTitle": {
+      "type": "string"
+    },
+    "TopFormation1": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::formation.formation"
+    },
+    "TopFormation2": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::formation.formation"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "linkText": {
+      "type": "string"
+    }
+  }
+}

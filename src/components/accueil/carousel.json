@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_accueil_carousels",
+  "info": {
+    "displayName": "Carousel",
+    "icon": "play",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "carousel": {
+      "type": "component",
+      "repeatable": true,
+      "component": "carousel.carousel"
+    }
+  }
+}

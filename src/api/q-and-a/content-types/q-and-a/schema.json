@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "q_and_as",
+  "info": {
+    "singularName": "q-and-a",
+    "pluralName": "q-and-as",
+    "displayName": "Q&A",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "formation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::formation.formation",
+      "inversedBy": "q_and_as"
+    },
+    "reponse": {
+      "type": "component",
+      "repeatable": true,
+      "component": "qanda.reponse"
+    },
+    "like": {
+      "type": "component",
+      "repeatable": true,
+      "component": "qanda.likereponse"
+    },
+    "titre": {
+      "type": "string"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user",
+      "private": true
+    },
+    "id_admin_user": {
+      "type": "integer",
+      "private": true
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_categories_activites_quizzes",
+  "info": {
+    "displayName": "Test - QCM",
+    "icon": "table",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "reponse": {
+      "type": "component",
+      "repeatable": true,
+      "component": "test-reponses.qcm-choice"
+    },
+    "reponseUnique": {
+      "type": "boolean",
+      "default": false
+    },
+    "question_contenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "test-questions.quizz-question"
+    }
+  }
+}

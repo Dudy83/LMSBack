@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "become_teachers",
+  "info": {
+    "singularName": "become-teacher",
+    "pluralName": "become-teachers",
+    "displayName": "Contact Devenir Enseignant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "stepsTeacher": {
+      "type": "component",
+      "repeatable": true,
+      "component": "become-teacher.steps-teacher"
+    }
+  }
+}

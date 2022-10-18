@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_become_teacher_become_teachers",
+  "info": {
+    "name": "Become Teacher",
+    "icon": "user-plus"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Information": {
+      "type": "richtext"
+    },
+    "formulaire": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_carousel_carousels",
+  "info": {
+    "displayName": "carousel",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "btnText": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "action": {
+      "type": "string"
+    }
+  }
+}

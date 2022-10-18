@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entites",
+  "info": {
+    "singularName": "entite",
+    "pluralName": "entites",
+    "displayName": "Entite",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Adresse1": {
+      "type": "text"
+    },
+    "Adresse2": {
+      "type": "text"
+    },
+    "CP": {
+      "type": "biginteger"
+    },
+    "Ville": {
+      "type": "text"
+    },
+    "contacts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact.contact",
+      "mappedBy": "entite"
+    },
+    "Siren": {
+      "type": "string",
+      "minLength": 9,
+      "maxLength": 9,
+      "unique": true
+    },
+    "projets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::projet.projet",
+      "mappedBy": "entite"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user",
+      "private": true
+    },
+    "id_admin_user": {
+      "type": "integer",
+      "private": true
+    }
+  }
+}

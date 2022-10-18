@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activites_log_stores",
+  "info": {
+    "singularName": "activites-log-store",
+    "pluralName": "activites-log-stores",
+    "displayName": "Activités Log Store",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "session": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::session.session"
+    },
+    "logs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "modele-log.log"
+    }
+  }
+}

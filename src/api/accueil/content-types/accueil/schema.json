@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "accueils",
+  "info": {
+    "singularName": "accueil",
+    "pluralName": "accueils",
+    "displayName": "Accueil",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Structure": {
+      "type": "dynamiczone",
+      "components": [
+        "accueil.about",
+        "accueil.banniere",
+        "accueil.carousel",
+        "accueil.categories",
+        "accueil.reassurance",
+        "accueil.faq"
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_restrictions_jours_passe_depuis_debut_sessions",
+  "info": {
+    "displayName": "Jours passé depuis début session",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "nombre_jours": {
+      "type": "biginteger",
+      "required": true,
+      "default": "7"
+    }
+  }
+}

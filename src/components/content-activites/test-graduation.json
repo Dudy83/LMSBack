@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_activites_test_graduations",
+  "info": {
+    "displayName": "Test - Graduation",
+    "icon": "sort-numeric-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question_contenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "test-questions.quizz-question"
+    },
+    "reponse": {
+      "type": "component",
+      "repeatable": false,
+      "component": "test-reponses.graduation"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_menus_menus_ressources",
+  "info": {
+    "displayName": "menu",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menuName": {
+      "type": "string"
+    },
+    "menuLink": {
+      "type": "string"
+    },
+    "buttonIcon": {
+      "type": "string"
+    },
+    "publier": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "icon": {
+      "type": "text"
+    }
+  }
+}

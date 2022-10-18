@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formations_categories",
+  "info": {
+    "singularName": "formations-categorie",
+    "pluralName": "formations-categories",
+    "displayName": "Formations Catégories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "icon": {
+      "type": "string",
+      "required": true
+    },
+    "HexCode": {
+      "type": "string",
+      "required": true
+    },
+    "formations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::formation.formation",
+      "mappedBy": "formations_category"
+    },
+    "buttonIcon": {
+      "type": "text"
+    },
+    "showCategory": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "reference": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user",
+      "private": true
+    },
+    "id_admin_user": {
+      "type": "integer",
+      "private": true
+    }
+  }
+}

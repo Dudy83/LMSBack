@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "nav_bar_conditions",
+  "info": {
+    "singularName": "nav-bar-condition",
+    "pluralName": "nav-bar-conditions",
+    "displayName": "Conditions Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "conditionsLists": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menus-ressources.menus-ressources"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "cgv": {
+      "type": "richtext"
+    },
+    "cgu": {
+      "type": "richtext"
+    },
+    "politiqueQualite": {
+      "type": "richtext"
+    }
+  }
+}

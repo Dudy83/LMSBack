@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projets",
+  "info": {
+    "singularName": "projet",
+    "pluralName": "projets",
+    "displayName": "Projet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom_projet": {
+      "type": "string",
+      "required": true
+    },
+    "DateOffre": {
+      "type": "date"
+    },
+    "DateDecision": {
+      "type": "date",
+      "required": true
+    },
+    "Descriptif_Projet": {
+      "type": "text"
+    },
+    "MontantEuroHT": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "Categorie": {
+      "type": "enumeration",
+      "enum": [
+        "Formation",
+        "Conseil",
+        "Informatique",
+        "Travaux",
+        "Autre"
+      ]
+    },
+    "Statut": {
+      "type": "enumeration",
+      "enum": [
+        "Prospect",
+        "EnCours",
+        "OffreRemise",
+        "Gagne",
+        "Perdu",
+        "Abandon",
+        "RealisationEnCours",
+        "Facture"
+      ],
+      "default": "Prospect",
+      "required": true
+    },
+    "Note": {
+      "type": "text"
+    },
+    "entite": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::entite.entite",
+      "inversedBy": "projets"
+    },
+    "Contact": {
+      "type": "string"
+    },
+    "id_admin_user": {
+      "type": "integer",
+      "private": true
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user",
+      "private": true
+    }
+  }
+}

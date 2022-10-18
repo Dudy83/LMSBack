@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_quizz_reponses_texte_a_trous",
+  "info": {
+    "displayName": "TexteATrous",
+    "icon": "file-signature",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "TexteATrous": {
+      "type": "richtext",
+      "default": "Ecrivez votre texte et veillez à enseigner les mots à deviner entre crochets. Exemple : La couleur du l'eau est [transparente]",
+      "required": true
+    }
+  }
+}

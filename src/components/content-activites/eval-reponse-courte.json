@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_content_activites_eval_reponse_courtes",
+  "info": {
+    "displayName": "Test - Reponse Courte",
+    "icon": "list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question_contenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "test-questions.quizz-question"
+    },
+    "reponse": {
+      "type": "component",
+      "repeatable": false,
+      "component": "test-reponses.reponse-courte",
+      "required": true
+    }
+  }
+}

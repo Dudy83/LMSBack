@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_content_activites_iframes",
+  "info": {
+    "displayName": "iframe",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "lienUrl": {
+      "type": "text",
+      "minLength": 5,
+      "required": true
+    }
+  }
+}

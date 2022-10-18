@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_pricing_cards_cards",
+  "info": {
+    "displayName": "card",
+    "icon": "grip-horizontal",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "subText": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing-cards.features-list"
+    }
+  }
+}

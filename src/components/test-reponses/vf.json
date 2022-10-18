@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_quizz_reponses_vfs",
+  "info": {
+    "displayName": "VF",
+    "icon": "check-double",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "bonneReponse": {
+      "type": "richtext",
+      "required": true
+    },
+    "mauvaiseReponse": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

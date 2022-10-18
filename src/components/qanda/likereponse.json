@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_qanda_likereponses",
+  "info": {
+    "displayName": "likereponse",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

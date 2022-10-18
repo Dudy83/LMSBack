@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_list_items_items",
+  "info": {
+    "displayName": "item",
+    "icon": "crosshairs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    }
+  }
+}

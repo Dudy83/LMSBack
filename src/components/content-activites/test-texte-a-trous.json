@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_activites_test_texte_a_trous",
+  "info": {
+    "displayName": "Test - Texte à trous",
+    "icon": "i-cursor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question_contenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "test-questions.quizz-question"
+    },
+    "reponse": {
+      "type": "component",
+      "repeatable": true,
+      "component": "test-reponses.texte-a-trous"
+    }
+  }
+}

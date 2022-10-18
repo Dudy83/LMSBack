@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Formations Commandes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "payement": {
+      "type": "enumeration",
+      "enum": [
+        "en attente",
+        "payé",
+        "non payé",
+        "payement partiel"
+      ],
+      "default": "non payé"
+    },
+    "totalPrice": {
+      "type": "decimal"
+    },
+    "formation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::formation.formation",
+      "inversedBy": "commandes_formations"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "commandes_formations"
+    },
+    "with": {
+      "type": "enumeration",
+      "enum": [
+        "CB",
+        "Crédits"
+      ]
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user",
+      "private": true
+    },
+    "id_admin_user": {
+      "type": "integer",
+      "required": false,
+      "private": true
+    }
+  }
+}

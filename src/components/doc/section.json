@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_doc_sections",
+  "info": {
+    "displayName": "section",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "doc.documentation"
+    },
+    "titre": {
+      "type": "string",
+      "required": true,
+      "default": "Section",
+      "minLength": 4
+    }
+  }
+}

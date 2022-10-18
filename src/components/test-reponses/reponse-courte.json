@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_quizz_reponses_reponse_courtes",
+  "info": {
+    "displayName": "reponseCourte",
+    "icon": "grip-lines",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "reponse": {
+      "type": "richtext",
+      "required": true,
+      "default": "Réponse courte..",
+      "minLength": 3
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_become_teacher_steps_teachers",
+  "info": {
+    "displayName": "stepsTeacher",
+    "icon": "grin-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Information": {
+      "type": "richtext"
+    },
+    "formulaire": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

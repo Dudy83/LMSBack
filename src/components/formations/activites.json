@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_formations_activites",
+  "info": {
+    "displayName": "Activités",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "activite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::activite.activite"
+    }
+  }
+}

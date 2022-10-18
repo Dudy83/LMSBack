@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activites_logs",
+  "info": {
+    "singularName": "activites-log",
+    "pluralName": "activites-logs",
+    "displayName": "Activités Log",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "activite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::activite.activite"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "time": {
+      "type": "integer"
+    },
+    "session": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::session.session"
+    },
+    "done": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    },
+    "content": {
+      "type": "json"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "module": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::module.module"
+    },
+    "content_index": {
+      "type": "biginteger",
+      "default": "0"
+    }
+  }
+}

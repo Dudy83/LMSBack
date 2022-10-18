@@ -1,0 +1,88 @@
+{
+  "kind": "singleType",
+  "collectionName": "themes",
+  "info": {
+    "singularName": "theme",
+    "pluralName": "themes",
+    "displayName": "Theme",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "default_avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "mainColor": {
+      "type": "string",
+      "customFieldConfig": {
+        "fieldRenderer": "color_picker_renderer"
+      }
+    },
+    "secondColor": {
+      "type": "string",
+      "customFieldConfig": {
+        "fieldRenderer": "color_picker_renderer"
+      }
+    },
+    "lightColor": {
+      "type": "string",
+      "customFieldConfig": {
+        "fieldRenderer": "color_picker_renderer"
+      }
+    },
+    "blackColor": {
+      "type": "string",
+      "customFieldConfig": {
+        "fieldRenderer": "color_picker_renderer"
+      }
+    },
+    "tempsInactifSuivi": {
+      "type": "integer",
+      "required": true
+    },
+    "bannerFormation": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "uni",
+        "blob",
+        "taches"
+      ],
+      "default": "uni"
+    },
+    "title": {
+      "type": "string"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "friendly",
+        "pro"
+      ],
+      "default": "friendly"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_activites_eval_dissertations",
+  "info": {
+    "displayName": "Test - Dissertation",
+    "icon": "file-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question_contenu": {
+      "type": "component",
+      "repeatable": false,
+     "component": "test-questions.quizz-question"
+    },
+    "reponse": {
+      "type": "component",
+      "repeatable": false,
+      "component": "test-reponses.reponse-longue"
+    }
+  }
+}

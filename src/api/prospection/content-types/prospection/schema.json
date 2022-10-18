@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "prospections",
+  "info": {
+    "singularName": "prospection",
+    "pluralName": "prospections",
+    "displayName": "Prospection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "professions": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_features_card_boxes",
+  "info": {
+    "displayName": "box",
+    "icon": "circle-notch"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "subText": {
+      "type": "string"
+    }
+  }
+}

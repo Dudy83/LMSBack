@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_accueil_categories",
+  "info": {
+    "displayName": "Catégories",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}
