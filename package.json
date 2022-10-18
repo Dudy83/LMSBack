@@ -45,7 +45,6 @@
     "strapi-plugin-notes": "^1.0.0",
     "strapi-plugin-rest-cache": "^4.2.1",
     "strapi-provider-rest-cache-memory": "^4.2.4",
-    "strapi-tiptap-editor": "^0.7.11",
     "styled-components": "^5.3.5"
   },
   "author": {
